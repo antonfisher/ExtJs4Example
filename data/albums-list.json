@@ -1,0 +1,17 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "One",
+            "description": "JSON store"
+        },{
+            "id": "2",
+            "name": "Two",
+            "description": "JSON store"
+        },{
+            "id": "3",
+            "name": "Three",
+            "description": "JSON store"
+        }
+    ]
+}

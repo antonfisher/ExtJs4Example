@@ -1,66 +1,59 @@
 Ext.define('App.view.Viewport', {
     extend: 'Ext.container.Viewport',
-    alias: 'widget.MainContainer',
 
-    layout: 'fit',
+    layout: 'border',
 
     initComponent: function() {
-        this.items = {
-            xtype: 'panel',
-
-            dockedItems: [{
-                dock: 'top',
-                xtype: 'toolbar',
-                height: 80,
-                items: [{
-                    //xtype: 'newstation',
-                    width: 150
-                }, {
-                    //xtype: 'songcontrols',
-                    height: 70,
-                    flex: 1
-                }, {
-                    xtype: 'component',
-                    html: 'Panda<br>Internet Radio'
-                }]
-            }],
-
-            layout: {
-                type: 'hbox',
-                align: 'stretch'
-            },
-
-            items: [{
-                width: 250,
-                xtype: 'panel',
+        this.items = [
+            {
+                region: 'north',
+                height: 70,
                 layout: {
-                    type: 'vbox',
+                    type: 'hbox',
                     align: 'stretch'
                 },
-                items: [{
-                    xtype: 'stations-StationsList',
-                    flex: 1
-                }, {
-                    html: 'Ad',
-                    height: 250,
-                    xtype: 'panel'
-                }]
-            }, {
+                defaults: {
+                    padding: 5
+                },
+                items: [
+                    {
+                        html: '-barcamp-internet-radio-',
+                        width: 250
+                    },{
+                        flex: 1,
+                        html: '-control-buttons-'
+                    },{
+                        html: '-search-',
+                        width: 250
+                    }
+                ]
+            },{
+                region: 'west',
                 xtype: 'container',
-                flex: 1,
+                width: 250,
                 layout: {
                     type: 'vbox',
                     align: 'stretch'
                 },
-                items: [{
-                    //xtype: 'recentlyplayedscroller',
-                    height: 250
-                }, {
-                    //xtype: 'songinfo',
-                    flex: 1
-                }]
-            }]
-        };
+                items: [
+                    {
+                        xtype: 'albums-AlbumsList',
+                        padding: 5,
+                        flex: 1,
+                        html: '+albums-AlbumsList+'
+                    },{
+                        html: '-ad-',
+                        padding: 5,
+                        height: 100
+                    }
+                ]
+            },{
+                region: 'center',
+                padding: 5,
+                xtype: 'songs-SongsList',
+                html: '+songs-SongsList+'
+            }
+        ];
 
         this.callParent();
     }

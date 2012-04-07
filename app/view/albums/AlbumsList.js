@@ -1,10 +1,10 @@
-Ext.define('App.view.stations.StationsList', {
+Ext.define('App.view.albums.AlbumsList', {
     extend: 'Ext.grid.Panel',
-    alias: 'widget.stations-StationsList',
+    alias: 'widget.albums-AlbumsList',
 
-    store: 'Stations',
+    store: 'Albums',
 
-    title: 'Stations',
+    title: 'Albums',
 
     columns: [
         {header: 'Id',          dataIndex: 'id',          flex:1},

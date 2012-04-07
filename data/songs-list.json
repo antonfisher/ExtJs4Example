@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "id_album": "1",
+            "artist": "Artist 1",
+            "date": "2012-04-07",
+            "title": "JSON store song 1"
+        },{
+            "id": "2",
+            "id_album": "2",
+            "artist": "Artist 2",
+            "date": "2011-04-07",
+            "title": "JSON store song 2"
+        },{
+            "id": "3",
+            "id_album": "2",
+            "artist": "Artist 3",
+            "date": "2010-04-07",
+            "title": "JSON store song 3"
+        },{
+            "id": "4",
+            "id_album": "3",
+            "artist": "Artist 2",
+            "date": "2009-04-07",
+            "title": "JSON store song 4"
+        },{
+            "id": "5",
+            "id_album": "3",
+            "artist": "Artist 1",
+            "date": "2008-04-07",
+            "title": "JSON store song 5"
+        },{
+            "id": "6",
+            "id_album": "3",
+            "artist": "Artist 3",
+            "date": "2007-04-07",
+            "title": "JSON store song 6"
+        }
+    ]
+}

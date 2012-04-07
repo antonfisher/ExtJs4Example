@@ -11,7 +11,7 @@ Ext.application({
     appFolder: 'app',
 
     controllers: [
-        'Stations'//, 'Song'
+        'Albums', 'Songs'
     ],
 
     autoCreateViewport: true,
