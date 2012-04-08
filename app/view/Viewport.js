@@ -38,9 +38,10 @@ Ext.define('App.view.Viewport', {
                 items: [
                     {
                         xtype: 'albums-AlbumsList',
+                        //store: Ext.create('App.store.Albums'),
                         padding: 5,
-                        flex: 1,
-                        html: '+albums-AlbumsList+'
+                        flex: 1//,
+                        //html: '+albums-AlbumsList+'
                     },{
                         html: '-ad-',
                         padding: 5,
@@ -50,8 +51,8 @@ Ext.define('App.view.Viewport', {
             },{
                 region: 'center',
                 padding: 5,
-                xtype: 'songs-SongsList',
-                html: '+songs-SongsList+'
+                xtype: 'songs-SongsList'//,
+                //html: '+songs-SongsList+'
             }
         ];
 
